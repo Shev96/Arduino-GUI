@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1636502233 source:d:\c_projects\gui for arduino\cserialport.c
+	"CSerialPort.h"
+
+1636571317 d:\c_projects\gui for arduino\cserialport.h
+	<Windows.h>
+
+1636572437 source:d:\c_projects\gui for arduino\main.cpp
+	<windows.h>
+	<stdlib.h>
+	"CSerialPort.h"
+
