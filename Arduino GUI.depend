@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1636660527 source:d:\c_projects\arduino gui\main.cpp
+	<windows.h>
+	<stdlib.h>
+	<CSerialPort.h>
+
+1636492603 source:d:\c_projects\arduino gui\comport.c
+
+1636502233 source:d:\c_projects\arduino gui\cserialport\cserialport.c
+	"CSerialPort.h"
+
+1636502233 d:\c_projects\arduino gui\cserialport\cserialport.h
+	<Windows.h>
+
+1636571317 d:\c_projects\arduino gui\cserialport.h
+	<Windows.h>
+
+1636502233 source:d:\c_projects\arduino gui\cserialport.c
+	"CSerialPort.h"
+
+1636571558 d:\c_projects\arduino gui\simpleserial.h
+	<Windows.h>
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<string>
+	<string.h>
+	<chrono>
+	<thread>
+	<time.h>
+	<fstream>
+
+1636571760 source:d:\c_projects\arduino gui\simpleserial.cpp
+	"SimpleSerial.h"
+

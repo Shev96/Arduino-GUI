@@ -1,9 +1,6 @@
 #include <windows.h>
 #include <stdlib.h>
-#include "CSerialPort.h"
-
-
-
+#include <CSerialPort.h>
 
 
 #define FILE_MENU_NEW 1
@@ -72,7 +69,7 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR args, int nsmdsho
                 break;
 
                 case COMPORT_CONNECT:
-                auto p1= OpenPort(1);
+                PORT p1 = OpenPort(1);
                 break;
 
 
