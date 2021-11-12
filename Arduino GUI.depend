@@ -1,7 +1,8 @@
 # depslib dependency file v1.0
-1636660527 source:d:\c_projects\arduino gui\main.cpp
+1636667002 source:d:\c_projects\arduino gui\main.cpp
 	<windows.h>
 	<stdlib.h>
+	<stdio.h>
 	<CSerialPort.h>
 
 1636492603 source:d:\c_projects\arduino gui\comport.c

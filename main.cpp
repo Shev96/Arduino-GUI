@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <stdlib.h>
+#include<stdio.h>
 #include <CSerialPort.h>
 
 
@@ -14,7 +15,8 @@
  LRESULT CALLBACK WindowProcedure(HWND, UINT, WPARAM, LPARAM);
  HMENU hMenu;
  HWND hName, hRx,hTx, hOut;
-
+char recivestr[8];
+int len=10;
  void AddMenus(HWND);
  void AddControls(HWND);
 
@@ -69,7 +71,16 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInst, LPSTR args, int nsmdsho
                 break;
 
                 case COMPORT_CONNECT:
-                PORT p1 = OpenPort(1);
+                PORT p1 = OpenPort(13);
+                SetPortDataBits(p1,8);
+                SetPortBoudRate(p1, 9600);
+
+                SetPortStopBits(p1, 1);
+                SetPortParity(p1,0);
+                ReciveData(p1,recivestr, 8);
+                SetWindowText(hOut,recivestr);;
+               // printf(recivestr);
+                ClosePort(p1);
                 break;
 
 
